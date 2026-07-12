@@ -1,0 +1,11 @@
+{
+  "name": "driver-drowsiness-detection",
+  "version": "1.0.0",
+  "description": "Driver Drowsiness Detection Web App",
+  "scripts": {
+    "dev": "python -m http.server 8000 --directory web"
+  },
+  "keywords": ["drowsiness", "detection", "computer-vision"],
+  "author": "",
+  "license": "MIT"
+}

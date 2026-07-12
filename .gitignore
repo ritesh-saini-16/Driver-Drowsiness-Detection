@@ -1,0 +1,12 @@
+Train dataset
+Valid dataset
+.venv
+.venv_old
+__pycache__
+*.pyc
+*.jpg
+*.jpeg
+*.png
+*.gif
+*.bmp
+CNN_m.h5

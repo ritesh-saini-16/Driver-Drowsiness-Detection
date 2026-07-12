@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Driver Drowsiness Detection</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Import TensorFlow.js -->
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@4.14.0/dist/tf.min.js"></script>
+    <!-- Import MediaPipe Face Mesh -->
+    <script src="https://cdn.jsdelivr.net/npm/@mediapipe/face_mesh/face_mesh.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@mediapipe/camera_utils/camera_utils.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@mediapipe/drawing_utils/drawing_utils.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Driver Drowsiness Detection</h1>
+        <div class="video-container">
+            <video id="webcam" autoplay playsinline></video>
+            <canvas id="canvas" class="output_canvas"></canvas>
+        </div>
+        <div class="status-panel">
+            <p>Eye State: <span id="eyeState">Detecting...</span></p>
+            <p>Drowsiness Score: <span id="score">0</span></p>
+            <p id="alarmStatus" class="alarm-status">Alarm: OFF</p>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
